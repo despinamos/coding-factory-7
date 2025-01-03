@@ -8,19 +8,31 @@ package gr.aueb.cf.ch12;
  */
 
 public class Student {
-    int id;
-    String firstname;
-    String lastname;
+    private static int studentsCount = 0;
+
+    private int id;
+    private String firstname;
+    private String lastname;
+
+    static {
+        studentsCount = 0;
+    }
 
     // Default Constructor
     public Student() {
-
+        studentsCount++;
     }
 
+    //Overloaded constructor
     public Student(int id, String firstname, String lastname) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
+        studentsCount++;
+    }
+
+    public static int getStudentsCount() {
+        return studentsCount;
     }
 
 
