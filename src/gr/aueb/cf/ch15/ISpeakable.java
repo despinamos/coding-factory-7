@@ -1,4 +1,9 @@
 package gr.aueb.cf.ch15;
 
-public class ISpeakable {
+public interface ISpeakable {
+
+    /**
+     * Makes a sound like a speech.
+     */
+    void speak();
 }

@@ -1,7 +1,9 @@
 package gr.aueb.cf.ch13.exceptions;
 
-public class NegativeAmountException extends RuntimeException {
-  public NegativeAmountException(String message) {
-    super(message);
-  }
+public class NegativeAmountException extends Exception {
+
+    public NegativeAmountException(double amount) {
+
+        super("Amount " + amount + " is insufficient.");
+    }
 }
