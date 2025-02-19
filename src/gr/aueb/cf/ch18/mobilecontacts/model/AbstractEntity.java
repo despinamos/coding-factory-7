@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch18.mobilecontacts.model;
 
+import gr.aueb.cf.exercises2025.abstractclasses.IShape;
+
 public abstract class AbstractEntity {
     private Long id;
 
